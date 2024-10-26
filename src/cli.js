@@ -16,5 +16,5 @@ export function congratulations() {
   console.log(`Congratulations, ${name}!`);
 }
 export function tryAgain() {
-  console.log(`Lets try again, ${name}!`);
+  console.log(`Let's try again, ${name}!`);
 }
