@@ -2,8 +2,8 @@ import { playGame } from "../index.js";
 import { generateNumber } from "../utils.js";
 
 const generateQuestion = () => {
-  const num1 = generateNumber(100);
-  const num2 = generateNumber(100);
+  const num1 = generateNumber(0, 100);
+  const num2 = generateNumber(0, 100);
 
   return `${num1} ${num2}`;
 };
