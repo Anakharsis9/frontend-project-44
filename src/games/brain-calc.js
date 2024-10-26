@@ -1,4 +1,4 @@
-import { playGame } from "./game.js";
+import { playGame } from "../index.js";
 
 const operations = ["+", "-", "*"];
 
