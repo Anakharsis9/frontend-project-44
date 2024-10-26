@@ -23,11 +23,11 @@
    ```
 2. Установите все зависимости:
    ```bash
-   make install
+   npm ci
    ```
 3. Запустите команду:
    ```bash
-   make publish
+   npm publish --dry-run
    ```
 4. Далее локально опубликуйте пакет:
    ```bash
