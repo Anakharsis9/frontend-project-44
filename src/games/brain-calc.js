@@ -1,8 +1,8 @@
 import { playGame } from "../index.js";
+import { generateNumber } from "../utils.js";
 
 const operations = ["+", "-", "*"];
 
-const generateNumber = () => Math.floor(Math.random() * 10) + 1;
 const generateOperator = () =>
   operations[Math.floor(Math.random() * operations.length)];
 

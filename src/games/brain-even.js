@@ -1,8 +1,5 @@
 import { playGame } from "../index.js";
-
-function generateNumber() {
-  return Math.floor(Math.random() * 100) + 1;
-}
+import { generateNumber } from "../utils.js";
 
 function isEven(number) {
   return number % 2 === 0;
