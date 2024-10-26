@@ -15,11 +15,11 @@ function getCorrectAnswer(number) {
 
 export default function game() {
   greeting();
-
   console.log("Answer 'yes' if the number is even, otherwise answer 'no'.");
+
   let correctAnswersCount = 0;
 
-  while (correctAnswersCount !== 3) {
+  while (correctAnswersCount < 3) {
     const number = generateNumber();
     const correctAnswer = getCorrectAnswer(number);
 
@@ -32,13 +32,11 @@ export default function game() {
       );
       tryAgain();
       return;
-    } else {
-      correctAnswersCount++;
-      console.log("Correct!");
     }
 
-    if (correctAnswersCount === 3) {
-      congratulations();
-    }
+    correctAnswersCount++;
+    console.log("Correct!");
   }
+
+  congratulations();
 }
