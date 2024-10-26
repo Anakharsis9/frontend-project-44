@@ -1,5 +1,5 @@
-import { playGame } from "../index.js";
-import { generateNumber } from "../utils.js";
+import playGame from '../index.js';
+import generateNumber from '../utils.js';
 
 const generateQuestion = () => {
   const num1 = generateNumber(0, 100);
@@ -8,8 +8,8 @@ const generateQuestion = () => {
   return `${num1} ${num2}`;
 };
 
-const findGCD = numbers => {
-  let [a, b] = numbers.split(" ").map(num => Number(num));
+const findGCD = (numbers) => {
+  let [a, b] = numbers.split(' ').map((num) => Number(num));
 
   while (b !== 0) {
     const temp = b;
@@ -19,9 +19,6 @@ const findGCD = numbers => {
   return String(a);
 };
 
-export const gcdGame = () =>
-  playGame(
-    "Find the greatest common divisor of given numbers.",
-    generateQuestion,
-    findGCD
-  );
+export default function gcdGame() {
+  return playGame('Find the greatest common divisor of given numbers.', generateQuestion, findGCD);
+}

@@ -1,17 +1,10 @@
-import { playGame } from "../index.js";
-import { generateNumber } from "../utils.js";
+import playGame from '../index.js';
+import generateNumber from '../utils.js';
 
-function isEven(number) {
-  return number % 2 === 0;
+const isEven = (number) => number % 2 === 0;
+
+const getCorrectAnswer = (number) => (isEven(number) ? 'yes' : 'no');
+
+export default function evenGame() {
+  return playGame('Answer "yes" if the number is even, otherwise answer "no".', generateNumber, getCorrectAnswer);
 }
-
-function getCorrectAnswer(number) {
-  return isEven(number) ? "yes" : "no";
-}
-
-export const evenGame = () =>
-  playGame(
-    'Answer "yes" if the number is even, otherwise answer "no".',
-    generateNumber,
-    getCorrectAnswer
-  );

@@ -1,5 +1,5 @@
-import { greeting, tryAgain, congratulations } from "./cli.js";
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
+import { greeting, tryAgain, congratulations } from './cli.js';
 
 // Функция для проведения одного раунда игры
 const playRound = (generateQuestion, getCorrectAnswer) => {
@@ -7,22 +7,19 @@ const playRound = (generateQuestion, getCorrectAnswer) => {
   const correctAnswer = getCorrectAnswer(question);
 
   console.log(`Question: ${question}`);
-  const userAnswer = readlineSync.question("Your answer: ");
+  const userAnswer = readlineSync.question('Your answer: ');
 
   if (userAnswer === correctAnswer) {
-    console.log("Correct!");
+    console.log('Correct!');
     return true; // Ответ правильный
-  } else {
-    console.log(
-      `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-    );
-    tryAgain();
-    return false; // Ответ неправильный
   }
+  console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+  tryAgain();
+  return false; // Ответ неправильный
 };
 
 // Основная функция игры
-export const playGame = (description, generateQuestion, getCorrectAnswer) => {
+export default function playGame(description, generateQuestion, getCorrectAnswer) {
   greeting();
   console.log(description);
 
@@ -34,8 +31,8 @@ export const playGame = (description, generateQuestion, getCorrectAnswer) => {
     if (!isCorrect) {
       return; // Завершаем игру при неправильном ответе
     }
-    correctAnswersCount++;
+    correctAnswersCount += 1;
   }
 
   congratulations();
-};
+}
