@@ -11,7 +11,7 @@ function getCorrectAnswer(number) {
 
 export const evenGame = () =>
   playGame(
-    "Answer 'yes' if the number is even, otherwise answer 'no'.",
+    'Answer "yes" if the number is even, otherwise answer "no".',
     generateNumber,
     getCorrectAnswer
   );
