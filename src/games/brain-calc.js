@@ -1,6 +1,7 @@
-import playGame from '../index.js';
+import runGame from '../index.js';
 import generateNumber from '../utils.js';
 
+const description = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
 const generateOperator = () => operations[Math.floor(Math.random() * operations.length)];
@@ -30,6 +31,12 @@ const calculateExpression = (expression) => {
   }
 };
 
-export default function calcGame() {
-  return playGame('What is the result of the expression?', generateExpression, calculateExpression);
-}
+const generateQuestion = () => {
+  const expression = generateExpression();
+  const answer = calculateExpression(expression);
+  return [expression, answer];
+};
+
+const runCalc = () => runGame(description, generateQuestion);
+
+export default runCalc;
