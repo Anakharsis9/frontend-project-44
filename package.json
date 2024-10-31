@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Anakharsis9/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Anakharsis9/frontend-project-44/actions)",
+  "description": "A set of five console games to train your brain. Answer questions correctly to win; three correct answers complete the game, while wrong answers restart it",
   "main": "index.js",
   "scripts": {},
   "bin": {
