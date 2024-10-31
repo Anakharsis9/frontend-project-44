@@ -1,7 +1,7 @@
-import playGame from '../index.js';
+import runGame from '../index.js';
 import generateNumber from '../utils.js';
 
-let correctAnswer = 0;
+const description = 'What number is missing in the progression?';
 
 const generateProgression = () => {
   const progression = [];
@@ -9,10 +9,11 @@ const generateProgression = () => {
   const d = generateNumber(1, 10);
   const progressionLength = generateNumber(5, 10);
 
-  const n = generateNumber(1, progressionLength);
+  const hiddenIndex = generateNumber(1, progressionLength);
+  let correctAnswer = 0;
 
   for (let i = 1; i < progressionLength + 1; i += 1) {
-    if (i === n) {
+    if (i === hiddenIndex) {
       correctAnswer = a + (i - 1) * d;
       progression.push('..');
     } else {
@@ -20,13 +21,9 @@ const generateProgression = () => {
     }
   }
 
-  return progression.join(' ');
+  return [progression.join(' '), String(correctAnswer)];
 };
 
-function getCorrectAnswer() {
-  return String(correctAnswer);
-}
+const runProgression = () => runGame(description, generateProgression);
 
-export default function progressionGame() {
-  return playGame('What number is missing in the progression?', generateProgression, getCorrectAnswer);
-}
+export default runProgression;
