@@ -12,7 +12,7 @@
 
 ## Минимальные требования
 
-- **Node.js**: Версия 20.0.0 или выше
+- **Node.js**: Версия 13.2.0 или выше
 
 ## Инструкции по установке
 
@@ -38,27 +38,30 @@
 ## Игры:
 
 - **Калькулятор**: Арифметические выражения, которые необходимо вычислить.
+
   ```bash
    brain-calc
   ```
-  [Ссылка на видео пример игры](https://asciinema.org/a/cmyohCskUBvyj4L7DJ1DIGQq5)
+
+  [![asciicast](https://asciinema.org/a/cmyohCskUBvyj4L7DJ1DIGQq5.svg)](https://asciinema.org/a/cmyohCskUBvyj4L7DJ1DIGQq5)
+
 - **Прогрессия**: Поиск пропущенных чисел в последовательности чисел.
   ```bash
    brain-progression
   ```
-  [Ссылка на видео пример игры](https://asciinema.org/a/eybQcszi1Czkss3Zx2XaorC6R)
+  [![asciicast](https://asciinema.org/a/eybQcszi1Czkss3Zx2XaorC6R.svg)](https://asciinema.org/a/eybQcszi1Czkss3Zx2XaorC6R)
 - **Определение четного числа**.
   ```bash
    brain-even
   ```
-  [Ссылка на видео пример игры](https://asciinema.org/a/zAiEmHnnBm6pbOQAqIXCl1tsW)
+  [![asciicast](https://asciinema.org/a/zAiEmHnnBm6pbOQAqIXCl1tsW.svg)](https://asciinema.org/a/zAiEmHnnBm6pbOQAqIXCl1tsW)
 - **Определение наибольшего общего делителя**.
   ```bash
    brain-gcd
   ```
-  [Ссылка на видео пример игры](https://asciinema.org/a/HV4T71rsyTyyWVk7rdL7LFIDF)
+  [![asciicast](https://asciinema.org/a/HV4T71rsyTyyWVk7rdL7LFIDF.svg)](https://asciinema.org/a/HV4T71rsyTyyWVk7rdL7LFIDF)
 - **Определение простого числа**.
   ```bash
    brain-prime
   ```
-  [Ссылка на видео пример игры](https://asciinema.org/a/2RIpaFxpKAaoQwPFM5loezRLi)
+  [![asciicast](https://asciinema.org/a/2RIpaFxpKAaoQwPFM5loezRLi.svg)](https://asciinema.org/a/2RIpaFxpKAaoQwPFM5loezRLi)
