@@ -2,7 +2,6 @@
   "extends": ["airbnb-base"],
   "rules": {
     "import/extensions": "off",
-    "no-console": "off",
-    "code": 110
+    "no-console": "off"
   }
 }
