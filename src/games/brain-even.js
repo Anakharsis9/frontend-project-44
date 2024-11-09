@@ -3,13 +3,13 @@ import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEven = (number) => number % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 
 const generateRound = () => {
-  const number = getRandomNumber();
-  const answer = isEven(number) ? 'yes' : 'no';
+  const num = getRandomNumber();
+  const answer = isEven(num) ? 'yes' : 'no';
 
-  return [number, answer];
+  return [num, answer];
 };
 
 const runEven = () => runGame(description, generateRound);
