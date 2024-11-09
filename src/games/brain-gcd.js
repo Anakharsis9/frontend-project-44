@@ -4,12 +4,16 @@ import { getRandomNumber } from '../utils.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const findGCD = (num1, num2) => {
-  while (num2 !== 0) {
-    const temp = num2;
-    num2 = num1 % num2;
-    num1 = temp;
+  let a = num1;
+  let b = num2;
+
+  while (b !== 0) {
+    const temp = b;
+    b = a % b;
+    a = temp;
   }
-  return num1;
+
+  return a;
 };
 
 const generateRound = () => {
