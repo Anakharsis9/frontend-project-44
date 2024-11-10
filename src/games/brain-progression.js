@@ -17,7 +17,7 @@ const generateRound = () => {
   const start = getRandomNumber();
   const step = getRandomNumber(1, 10);
   const length = getRandomNumber(5, 10);
-  
+
   const progression = generateProgression(start, step, length);
   const hiddenIndex = getRandomIndex(progression);
 
